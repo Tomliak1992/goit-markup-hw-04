@@ -134,6 +134,9 @@ p {
   display: flex;
   padding: 60px 0;
 }
+.footer:not(:last-child) {
+  margin-left: 70px;
+}
 .address-text {
   font-style: normal;
   line-height: 1.5;
@@ -154,6 +157,9 @@ p {
 }
 
 .tel {
+  display: inline-block;
+}
+.address {
   display: inline-block;
 }
 
@@ -264,6 +270,8 @@ p {
   margin-right: 30px;
 }
 .worker-thumb {
+  display: inline-block;
+  content: "";
   text-align: center;
   padding-top: 30px;
   padding-bottom: 36px;
@@ -354,10 +362,7 @@ p {
 .worker-icon:focus {
   fill: var(--wright-color);
 }
-.worker-link:hover,
-.worker-link:focus {
-  color: var(--accent-color);
-}
+
 
 .principles-icon {
   padding: 0;
@@ -373,32 +378,45 @@ p {
   margin-left: 32px;
   margin-right: 32px;
   justify-content: space-between;
+
 }
 .worker-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  content: "";
   width: 44px;
   height: 20px;
   margin: 0;
-  padding: 0;
+  padding: 12px;
   fill: #afb1b8;
-  background-color: blue;
-  border-radius: 50%;
 }
 .social-list {
   width: 44px;
   height: 44px;
-}
-.social-list > a:hover {
-  color: var(--accent-color);
-}
+  background-color: var(--wright-color);
+  border-radius: 50%;
 
+}
+.social-list:not(:last-child){
+  margin-right: 10px;
+}
 .client-logo {
   display: flex;
-  width: 1000px;
-  height: 150px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+}
+.social-list:hover, .social-list:focus {
+  color: var(--accent-color);
+}
+.client-list:not(:last-child) {
+  margin-right: 30px;
+}
+.client-list {
+  display: inline-block;
+  content: "";
+  width: 170px;
+  height: 92px;
+  margin: 0;
+  padding: 16px 32px;
+  background-color: #E5E5E5;
+  outline: 1px solid #AFB1B8;
+
 }
