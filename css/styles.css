@@ -92,12 +92,12 @@ p {
   padding-bottom: 32px;
 }
 .contact-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   color: var(--text-color);
   text-decoration: none;
   letter-spacing: 0.02em;
-  vertical-align: middle;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -146,15 +146,13 @@ p {
 .address-text {
   color: var(--wright-color);
 }
-
 .footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+}
+.footer-container {
   display: flex;
-  padding-bottom: 60px;
-  padding-top: 60px;
-  max-width: 1600px;
-  height: 252px;
-  margin-left: auto;
-  margin-right: auto;
+  align-items: baseline;
 }
 .title-social {
   font-weight: bold;
@@ -190,19 +188,9 @@ p {
 .address {
   display: inline-block;
 }
-.footer-info,
+
 .footer-social {
-  display: inline-block;
-}
-.footer-info {
-  margin-left: 215px;
-}
-.footer-social {
-  width: 206px;
-  height: 80px;
   margin-left: 70px;
-  margin-top: 15px;
-  padding: 0;
 }
 
 .footer-pages {
@@ -248,6 +236,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #2f303a;
 }
 .hero-button:hover {
   color: var(--title-text-color);
@@ -265,10 +254,6 @@ p {
   border-radius: 4px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.hero,
-.footer {
-  background-color: #2f303a;
 }
 
 .hero-text {
@@ -305,13 +290,14 @@ p {
   font-weight: 400;
   line-height: 1.7;
 }
-.principles-icon {
-  padding: 0;
+.principles-bg {
+  display: flex;
+  justify-content: center;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  padding: 25px 100px 25px 100px;
+  padding: 25px 0;
 }
 
 .principles-item {
@@ -347,8 +333,6 @@ p {
   margin-bottom: 16px;
 }
 .worker-thumb {
-  display: inline-block;
-  content: '';
   text-align: center;
   padding-top: 30px;
   padding-bottom: 36px;
@@ -361,9 +345,7 @@ p {
 
 .worker-pages {
   display: flex;
-  list-style: none;
-  margin-left: 32px;
-  margin-right: 32px;
+  justify-content: center;
 }
 .social-link {
   content: '';
@@ -396,20 +378,12 @@ p {
   fill: var(--wright-color);
 }
 /* client section */
-.client-list {
-  content: '';
-  width: 170px;
-  height: 92px;
-  margin: 0;
-}
 
 .client-list:not(:last-child) {
   margin-right: 30px;
 }
 .client-logo {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
 }
 .client-link {
   display: flex;
